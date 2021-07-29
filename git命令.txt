@@ -19,4 +19,11 @@ ls -ah 列出当前目录下的所有文件/文件夹
 git add readme.txt 把文件添加到git仓库 可以多次添加
 git commit -m "提交说明" 把文件提交到仓库  -m后面输入的是本次提交的说明 ""必须要加双引号
 
+git diff	查看修改的内容
 
+查看历史记录
+git log		显示出来的是版本号 + 版本提交说明
+git log --pretty=oneline
+
+版本回退	HEAD表示当前版本，HEAD^表示上一个版本，HEAD^表示上上个版本，HEAD~100表示往上100个版本
+git reset --hard HEAD^	回退到上个版本
