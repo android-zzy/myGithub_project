@@ -56,8 +56,9 @@ git config --global --unset https.proxy
 git config --global http.proxy http://127.0.0.1:7890 
 git config --global https.proxy http://127.0.0.1:7890
 
+将修改推送至远程
 git push 	把本地库的内容推送到远程。
-
+git push origin master	把本地master分支的最新修改推送至GitHub，现在，你就拥有了真正的分布式版本库！
 
 git版本库
 工作区 暂存区 master分支
