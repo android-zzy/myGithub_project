@@ -14,6 +14,7 @@ ls -ah 列出当前目录下的所有文件/文件夹
 
 
 添加文件到仓库：
+git add --all	添加文件到暂存区
 git add readme.txt 把文件添加到git仓库 可以多次添加。  git add命令实际上就是把要提交的所有修改放到暂存区（Stage）
 git commit -m "提交说明" 把文件提交到仓库  -m后面输入的是本次提交的说明 ""必须要加双引号。	git commit一次性把暂存区的所有修改提交到分支。
 
@@ -44,7 +45,7 @@ git rm 然后 git commit -m ""
 情况二：删错了
 git checkout -- <file>	把误删的文件恢复到最新版本
 
-git checkout其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。
+git checkout	其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。
 
 取消代理
 git config --global --unset http.proxy
@@ -73,6 +74,8 @@ git push origin master	此后，每次本地提交后，只要有必要，就可
 git clone git@github.com:michaelliao/gitskills.git
 
 
+
+
 配置相关----------------
 配置别名
 git config --global alias.st status
@@ -89,14 +92,16 @@ git config --global user.email "email"	配置全局的邮件地址
 
 ssh-keygen -t rsa -C "android_zzy@163.com"	生成SSH key
 
+git remote set-url origin git@github.com:someaccount/someproject.git	调整url
+
+查看相关
+cat <file>	查看文件内容
 
 
 
-
-
-
-
-
+vi <file>
+输入a，进入插入状态
+按下esc键，进入命令状态
 
 
 
