@@ -60,6 +60,21 @@ git config --global https.proxy http://127.0.0.1:7890
 git push 	把本地库的内容推送到远程。
 git push origin master	把本地master分支的最新修改推送至GitHub，现在，你就拥有了真正的分布式版本库！
 
+git remote -v	查看远程库信息
+git remote rm <name>	删除远程库(解除了本地和远程的绑定关系)
+
+git remote add origin git@github.com:android-zzy/CloneTest.git	要关联一个远程库
+
+关联一个远程库时必须给远程库指定一个名字，origin是默认习惯命名；
+
+git push -u origin master	关联后，使用此命令，第一次推送master分支的所有内容；
+
+git push origin master	此后，每次本地提交后，只要有必要，就可以使用命令推送最新修改；
+
+从远程库克隆
+git clone git@github.com:michaelliao/gitskills.git
+
+
 git版本库
 工作区 暂存区 master分支
 
